@@ -1,0 +1,13 @@
+UPDATE public."vessels" SET
+		"callsign" = '{{update_form.fieldState.callsign.isVisible ? update_form.formData.callsign : update_form.sourceData.callsign}}',
+		"shipname" = '{{update_form.fieldState.shipname.isVisible ? update_form.formData.shipname : update_form.sourceData.shipname}}',
+    "country" = '{{update_form.fieldState.country.isVisible ? update_form.formData.country : update_form.sourceData.country}}',
+		"next_port_name" = '{{update_form.fieldState.next_port_name.isVisible ? update_form.formData.next_port_name : update_form.sourceData.next_port_name}}',
+		"destination" = '{{update_form.fieldState.destination.isVisible ? update_form.formData.destination : update_form.sourceData.destination}}',
+		"vessel_type" = '{{update_form.fieldState.vessel_type.isVisible ? update_form.formData.vessel_type : update_form.sourceData.vessel_type}}',
+		"timezone" = '{{update_form.fieldState.timezone.isVisible ? update_form.formData.timezone : update_form.sourceData.timezone}}',
+		"status_name" = '{{update_form.fieldState.status_name.isVisible ? update_form.formData.status_name : update_form.sourceData.status_name}}',
+		"year_built" = '{{update_form.fieldState.year_built.isVisible ? update_form.formData.year_built : update_form.sourceData.year_built}}',
+		"area_code" = '{{update_form.fieldState.area_code.isVisible ? update_form.formData.area_code : update_form.sourceData.area_code}}',
+		"speed" = '{{update_form.fieldState.speed.isVisible ? update_form.formData.speed : update_form.sourceData.speed}}'
+	WHERE "ship_id" = {{data_table.selectedRow.ship_id}};

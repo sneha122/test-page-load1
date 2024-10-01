@@ -1,0 +1,13 @@
+UPDATE public."users" SET
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		"createdAt" = '{{update_form.fieldState.createdAt.isVisible ? update_form.formData.createdAt : update_form.sourceData.createdAt}}',
+    "updatedAt" = '{{update_form.fieldState.updatedAt.isVisible ? update_form.formData.updatedAt : update_form.sourceData.updatedAt}}',
+		"status" = '{{update_form.fieldState.status.isVisible ? update_form.formData.status : update_form.sourceData.status}}',
+		"gender" = '{{update_form.fieldState.gender.isVisible ? update_form.formData.gender : update_form.sourceData.gender}}',
+		"avatar" = '{{update_form.fieldState.avatar.isVisible ? update_form.formData.avatar : update_form.sourceData.avatar}}',
+		"email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+		"address" = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
+		"role" = '{{update_form.fieldState.role.isVisible ? update_form.formData.role : update_form.sourceData.role}}',
+		"dob" = '{{update_form.fieldState.dob.isVisible ? update_form.formData.dob : update_form.sourceData.dob}}',
+		"phoneNo" = '{{update_form.fieldState.phoneNo.isVisible ? update_form.formData.phoneNo : update_form.sourceData.phoneNo}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

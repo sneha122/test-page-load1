@@ -1,0 +1,48 @@
+{
+  "appIsExample": false,
+  "applicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {},
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#F4FFDE",
+  "evaluationVersion": 2,
+  "icon": "pizza",
+  "pages": [
+    {
+      "id": "CRUD_USERS",
+      "isDefault": true
+    },
+    {
+      "id": "CRUD_EMPLOYEES",
+      "isDefault": false
+    },
+    {
+      "id": "Crud_employess",
+      "isDefault": false
+    },
+    {
+      "id": "Public.vessels",
+      "isDefault": false
+    }
+  ],
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {},
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  }
+}

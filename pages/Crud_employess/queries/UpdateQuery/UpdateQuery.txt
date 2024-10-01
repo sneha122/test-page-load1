@@ -1,0 +1,10 @@
+UPDATE public."employees" SET
+		"employee_name" = '{{update_form.fieldState.employee_name.isVisible ? update_form.formData.employee_name : update_form.sourceData.employee_name}}',
+		"phone" = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+    "email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+		"isadmin" = '{{update_form.fieldState.isadmin.isVisible ? update_form.formData.isadmin : update_form.sourceData.isadmin}}',
+		"department_id" = '{{update_form.fieldState.department_id.isVisible ? update_form.formData.department_id : update_form.sourceData.department_id}}',
+		"calendar" = '{{update_form.fieldState.calendar.isVisible ? update_form.formData.calendar : update_form.sourceData.calendar}}',
+		"dob" = '{{update_form.fieldState.dob.isVisible ? update_form.formData.dob : update_form.sourceData.dob}}',
+		"doj" = '{{update_form.fieldState.doj.isVisible ? update_form.formData.doj : update_form.sourceData.doj}}'
+WHERE "employee_id" = {{data_table.selectedRow.employee_id}};

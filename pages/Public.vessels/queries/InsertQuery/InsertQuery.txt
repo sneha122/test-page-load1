@@ -1,0 +1,28 @@
+INSERT INTO public."vessels" (
+	"ship_id",
+	"callsign",
+	"shipname",
+	"country",
+	"next_port_name",
+	"destination",
+	"vessel_type",
+	"timezone",
+	"status_name",
+	"year_built",
+	"area_code",
+	"speed"
+)
+VALUES (
+	'{{insert_form.formData.ship_id}}',
+	'{{insert_form.formData.callsign}}',
+	'{{insert_form.formData.shipname}}',
+	'{{insert_form.formData.country}}',
+	'{{insert_form.formData.next_port_name}}',
+	'{{insert_form.formData.destination}}',
+	'{{insert_form.formData.vessel_type}}',
+	'{{insert_form.formData.timezone}}',
+	'{{insert_form.formData.status_name}}',
+	'{{insert_form.formData.year_built}}',
+	'{{insert_form.formData.area_code}}',
+	'{{insert_form.formData.speed}}'
+);

@@ -1,0 +1,2 @@
+DELETE FROM public."vessels"
+  WHERE "ship_id" = {{data_table.triggeredRow.ship_id}};
